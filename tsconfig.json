@@ -1,10 +1,27 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "declaration": false,
+        "downlevelIteration": false,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2015",        
         "module": "commonjs",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "paths": 
+        {
+            "$app*": ["src/app/modules/app/*"],
+            "$helpers/*": ["src/app/helpers/*"],
+        }
     },
     "include": [
         "src/**/*"
