@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@angular/core": "~11.0.0",
         "css-loader": "^5.2.0",
         "eslint-webpack-plugin": "^2.5.3",
         "html-loader": "^2.1.2",
